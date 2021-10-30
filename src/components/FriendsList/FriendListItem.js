@@ -1,3 +1,4 @@
+import PropsType from "props-type";
 import s from "./FriendList.module.css";
 export default function FriendListItem({ avatar, name, isOnline }) {
   return (
@@ -8,3 +9,8 @@ export default function FriendListItem({ avatar, name, isOnline }) {
     </div>
   );
 }
+FriendListItem.PropsType = {
+  avatar: PropsType.string,
+  name: PropsType.string,
+  isOnline: PropsType.string,
+};
