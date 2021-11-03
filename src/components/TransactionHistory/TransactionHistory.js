@@ -2,7 +2,7 @@ import PropsType from "props-type";
 import s from "./TransactionHistory.module.css";
 export default function TransactionHistory({ items }) {
   return (
-    <table class="transaction-history">
+    <table className="transaction-history">
       <thead>
         <tr>
           <th className={s.titleTable}>Type</th>
@@ -14,7 +14,7 @@ export default function TransactionHistory({ items }) {
       <tbody>
         {items.map((item, index) => {
           return (
-            <tr key={item.key}>
+            <tr key={item.id}>
               <td className={index % 2 === 0 ? s.valueSecond : s.value}>
                 {item.type}
               </td>

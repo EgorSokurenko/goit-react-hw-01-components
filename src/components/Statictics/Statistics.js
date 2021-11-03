@@ -1,3 +1,4 @@
+import PropsType from "props-type";
 import s from "./Statistics.module.css";
 export default function Statistics({ title, stats }) {
   return (
@@ -17,3 +18,7 @@ export default function Statistics({ title, stats }) {
     </section>
   );
 }
+Statistics.PropsType = {
+  title: PropsType.string,
+  stats: PropsType.array,
+};
